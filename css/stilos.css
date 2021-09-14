@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Open Sans';
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*.................................................................Menu superior*/
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    background: radial-gradient(rgba(0, 0, 0, 0.63), rgb(0, 0, 0));
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu,
+.logo {
+    float: left;
+    line-height: 100px;
+}
+
+.container .btn-menu label {
+    color: rgb(96, 149, 151);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 10px;
+    padding-top: 35px;
+}
+
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
+
+/*.................................................................Transition: tiempo*/
+.container .menu a {
+    display: inline-block;
+    padding: 10px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/*.................................................................Transformaciones Hover*/
+.container .menu a:hover {
+    border-bottom: 2px solid #1a6969;
+    padding-bottom: 5px;
+}
+
+
+/*.................................................................Inicio menù lateral*/
+#btn-menu {
+    display: none;
+}
+
+/*.................................................................Sombra menú lateral*/
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    background: radial-gradient(rgba(0, 0, 0, 0.63), rgb(0, 0, 0));
+    width: 100%;
+    height: 200vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+
+}
+
+.cont-menu {
+    width: 90%;
+    max-width: 250px;
+    background: #000000;
+    background: radial-gradient(rgba(20, 20, 20, 0.63), rgb(0, 0, 0));
+    height: 200vh;
+    position: fixed;
+    text-align: center;
+    transition: all 2000ms ease;
+    transform: translatex(-100%);
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(9%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    color: #ffffff;
+    border-right: 2px solid rgb(0, 0, 0);
+    transition: all 600ms ease;
+}
+
+/*.................................................................Gradiente*/
+.cont-menu nav a:hover {
+    border-left: 1px solid #000000c5;
+    background: #b9b9b9c9;
+    background: linear-gradient(to left, rgba(160, 160, 160, 0.644), rgba(0, 0, 0, 0.637));
+    transform: scale(1.05);
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+/*.................................................................FIN DE MENU SUPERIOR Y LATERAL*/
+/*.................................................................FIN DE MENU SUPERIOR Y LATERAL*/
+
+
+/*.................................................................Stilos Boostrap*/
+.capa{
+    padding-top: 100px;
+    z-index: -1;
+}
+
+.display-3{
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) -1px -1px 9px;
+    padding-bottom: 100px;
+}
+
+.display-4{
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) -1px -1px 9px;
+    padding-bottom: 100px;
+}
+
+/*.................................................................Inicio section*/
+
+.contenedorUno {
+    background-image: url(../img/servicios.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sloganUno {
+    color: #ffffff;
+    font-size: 60px;
+    text-shadow: rgb(0, 0, 0) -1px -1px 9px;
+    letter-spacing: 15px;
+    font-weight: 900px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: open sans;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#video {
+    width: 100%;
+    opacity: 35%;
+    z-index: -1;
+}
+
+#sloganDos {
+    color: #ffffff;
+    text-shadow: black -1px -1px 1px;
+    font-size: 40px;
+    letter-spacing: 15px;
+    font-weight: 900px;
+    text-align: center;
+    font-family: open sans;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*.................................................................Inicio Gradiente*/
+#sloganDos {
+    background: black;
+    transition: all 5s;
+}
+
+#parrafoUno {
+    color: #ffffff;
+    text-shadow: rgb(75, 32, 32) -1px -1px 1px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 200px 10px 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: open sans;
+    /*background-image: url(https://www.10wallpaper.com/wallpaper/1366x768/1712/Paddington_basin_architecture_photography_4K_HD_1366x768.jpg);*/
+}
+
+.logo h1:hover {
+    transition: all 7s;
+}
+
+
+/*.................................................................Inicio footer*/
+
+.footerUno {
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    background: radial-gradient(rgba(0, 0, 0, 0.63), rgb(0, 0, 0));
+    padding-top: 40px;
+    padding-bottom: 10px;
+}

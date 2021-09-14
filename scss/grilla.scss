@@ -1,0 +1,51 @@
+.grid-container {
+	padding-top: 50px;
+	display: grid;
+	margin: 50px 40px 40px 40px;
+	grid-template-columns: repeat(3, 33.3%);
+	grid-template-rows: repeat(4, 300px);
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: stretch;
+	font-size: 1rem;
+	grid-template-areas:
+		"bannerUno bannerUno bannerUno"
+		"servicioUno servicioDos servicioTres"
+		"servicioUno servicioDos servicioTres"
+		"servicioCuatro servicioCuatro servicioCuatro"
+}
+
+.bannerUno {
+	grid-area: bannerUno;
+	text-shadow: white -1px 1px 1px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.096);
+}
+
+.servicioUno {
+	grid-area: servicioUno;
+	background-color: #e4e4e4ad;
+	padding-top: 35px;
+}
+
+.servicioDos {
+	grid-area: servicioDos;
+	background-color: #94adacad;
+	padding-top: 35px;
+}
+
+.servicioTres {
+	grid-area: servicioTres;
+	background-color: #748f8dad;
+	padding-top: 35px;
+}
+
+.servicioCuatro {
+	grid-area: servicioCuatro;
+	background-color: #000000ad;
+
+}
