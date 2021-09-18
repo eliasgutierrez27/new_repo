@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+p {
+  font-weight: lighter; }
+
+.parrafo1 {
+  font-size: 0.8em;
+  color: #cecece; }
+
+.parrafo2 {
+  font-size: 1.6em;
+  color: white; }
+
+.parrafo3 {
+  font-size: 2.4em;
+  color: white; }
+
+.parrafo4 {
+  font-size: 3.2em;
+  color: white; }
+
+.parrafo5 {
+  font-size: 4em;
+  color: white; }
+
+.parrafo6 {
+  font-size: 4.8em;
+  color: white; }
+
+footer {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 80px;
+  padding: 50px 0 0 0; }
+
+footer h3 {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.grid-container {
+  padding-top: 50px;
+  display: grid;
+  margin: 50px 40px 40px 40px;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(4, 300px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno" "servicioUno servicioDos servicioTres" "servicioUno servicioDos servicioTres" "servicioCuatro servicioCuatro servicioCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  text-shadow: white -1px 1px 1px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.096); }
+
+.servicioUno {
+  grid-area: servicioUno;
+  background-color: #e4e4e4ad;
+  padding-top: 35px; }
+
+.servicioDos {
+  grid-area: servicioDos;
+  background-color: #94adacad;
+  padding-top: 35px; }
+
+.servicioTres {
+  grid-area: servicioTres;
+  background-color: #748f8dad;
+  padding-top: 35px; }
+
+.servicioCuatro {
+  grid-area: servicioCuatro;
+  background-color: #000000ad; }
+
+.boton {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10%;
+  padding: 8.33333px; }
+
+.box__img {
+  width: 400px;
+  height: 300px; }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%; }
+
+.hero {
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/servicios1.jpg); }
+
+.social {
+  list-style-type: none; }
+
+.facebook {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/facebook.png"); }
+
+.instagram {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/instagram.png"); }
+
+.whatsapp {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/whatsapp.png"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url(https://coolwallpapers.me/picsup/3034566-aluminium_black-and-white_profiles_shallow-depth-field.jpg);
+  background-size: cover;
+  font-family: sans-serif, 'Open Sans'; }
+
+/*.................................................................Inicio menù superior*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto; }
+
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px; }
+
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer; }
+
+.logo h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 10px;
+  text-shadow: black -1px -1px 1px; }
+
+.container .menu {
+  float: right;
+  line-height: 100px; }
+
+/*.................................................................Transition: tiempo*/
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: black -1px -1px 1px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px; }
+
+/*.................................................................Transformaciones Hover*/
+.container .menu a:hover {
+  border-bottom: 2px solid #850808;
+  padding-bottom: 5px; }
+
+/*.................................................................Inicio menù lateral*/
+#btn-menu {
+  display: none; }
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 200vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden; }
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1; }
+
+.cont-menu {
+  width: 100%;
+  max-width: 200px;
+  background: #00000088;
+  height: 200vh;
+  position: fixed;
+  text-align: center;
+  transition: all 500ms ease;
+  transform: translateX(-100%); }
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%); }
+
+.cont-menu nav {
+  transform: translateY(15%); }
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 18px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease; }
+
+/*.................................................................Gradiente*/
+.cont-menu nav a:hover {
+  border-left: 5px solid #b40000c5;
+  background: #1f1f1fc9;
+  background: linear-gradient(to left, rgba(107, 0, 0, 0.644), rgba(0, 0, 0, 0.637));
+  transform: scale(1.2, 1.2); }
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px; }
+
+.slogan--Uno {
+  text-align: center; }
